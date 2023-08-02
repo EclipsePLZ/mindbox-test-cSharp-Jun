@@ -103,7 +103,7 @@ VALUES (3, 1), (3, 2), (3, 3), (4, 4),
 
 
 /* Query to output all products and categories for them */
-SELECT i.name AS 'Имя продукта', c.name AS 'Имя категории'
+SELECT i.name AS 'Product name', c.name AS 'Category name'
 FROM items_categories it
 	JOIN categories c ON it.category_id = c.id
 	RIGHT JOIN items i ON it.item_id = i.id;
